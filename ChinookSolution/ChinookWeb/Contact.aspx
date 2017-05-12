@@ -5,7 +5,7 @@
     <h3>My contact page.</h3>
     <address>
         Troy Lau<br />
-        Songbei District 2468, Harbin<br />
+        2468, Songbei District, Harbin<br />
         <abbr title="Phone">P:</abbr>
         15355480342
     </address>
