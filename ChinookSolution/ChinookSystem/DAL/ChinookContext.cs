@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 #region Additional Namespaces
 using System.Data.Entity;
+using ChinookSystem.Data.Entities;
 #endregion
 
 namespace ChinookSystem.DAL
@@ -17,8 +18,11 @@ namespace ChinookSystem.DAL
     {
         // Pass the connection string name to the DbContext using :base()
         public ChinookContext() : base("ChinookDB")
-        {
-            // Pass the connection string name to the
-        }
+        { }
+
+        // Setup for all DbSet properties once the Entity classes are created
+        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<Track> Tracks { get; set; }
     }
 }
